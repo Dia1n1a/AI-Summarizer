@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+torch
+transformers
+openai-whisper
+numpy
+python-multipart
+evaluate
+rouge-score
